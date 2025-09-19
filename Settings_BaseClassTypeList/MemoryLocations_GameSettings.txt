@@ -1,0 +1,10 @@
+#.  Lines starting with '#.' are ignored and are used as comments in this file. (But whitespace matters)
+#.  Lines starting with '#!' are for the full class location
+#!  CrusadersGame.GameSettings
+UserID
+Hash
+Platform
+MobileClientVersion
+VersionPostFix
+_instance
+_instance.instanceID
