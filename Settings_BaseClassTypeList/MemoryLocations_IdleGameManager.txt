@@ -190,6 +190,7 @@ game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox.maxLev
 game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox.levelUpButtonDisplay.lastCostText
 game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def.ID
 game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack.internalCooldownTimer
+game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack.Queued
 game.gameInstances.Screen.uiController.bossPowerupPopup.highestPowerup
 game.gameInstances.Screen.uiController.notificationManager.notificationDisplay.welcomeBackNotification.Active
 #. ---=========================================
