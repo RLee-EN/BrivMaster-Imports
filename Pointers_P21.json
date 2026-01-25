@@ -1,28 +1,11 @@
 {
-	"CrusadersGameDataSet":{
-		"moduleAddress":7671840,
-		"moduleOffset":[
-			56,
-			64,
-			2720
-		],
-		"staticOffset":""
-	},
-	"DialogManager":{
-		"moduleAddress":7671840,
-		"moduleOffset":[
-			56,
-			64,
-			2912
-		],
-		"staticOffset":""
-	},
 	"EngineSettings":{
-		"moduleAddress":7816472,
+		"moduleAddress":7655936,
 		"moduleOffset":[
-			672
+			3856,
+			120
 		],
-		"staticOffset":3840
+		"staticOffset":4192
 	},
 	"GameSettings":{
 		"moduleAddress":10564936,
@@ -43,5 +26,5 @@
 	},
 	"Pointer_Version_Major":633,
 	"Pointer_Version_Minor":".1",
-	"Pointer_Revision":"A"
+	"Pointer_Revision":"B"
 }
