@@ -1,0 +1,7 @@
+this.UserID:=New GameObjectStructure(this.CrusadersGame.GameSettings,"Int",[this.StaticOffset+96])
+this.Hash:=New GameObjectStructure(this.CrusadersGame.GameSettings,"UTF-16",[this.StaticOffset+104])
+this.Platform:=New GameObjectStructure(this.CrusadersGame.GameSettings,"Int",[this.StaticOffset+208])
+this.MobileClientVersion:=New GameObjectStructure(this.CrusadersGame.GameSettings,"Int",[this.StaticOffset+224])
+this.VersionPostFix:=New GameObjectStructure(this.CrusadersGame.GameSettings,"UTF-16",[this.StaticOffset+232])
+this._instance:=New GameObjectStructure(this.CrusadersGame.GameSettings,"Int",[this.StaticOffset])
+this._instance.instanceID:=New GameObjectStructure(this._instance,"Int64",[24])
