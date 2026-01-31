@@ -117,7 +117,7 @@ IBM_Import_Generate()
 	dataPath:=A_LineFile . "\..\IC_Offsets_Data_P" . gamePlatform . ".zlib"
 	FileDelete, %dataPath%
 	FileAppend, % compressedJSON, %dataPath%
-	headerString:=fullVersion . "," . revision . "," . pointerFullVersion . "," . offSetOutput["Pointers","Pointer_Revision"]:=revision
+	headerString:=fullVersion . "," . revision . "," . pointerFullVersion . "," . offSetOutput["Pointers","Pointer_Revision"]
 	headerPath:=A_LineFile . "\..\IC_Offsets_Header_P" . gamePlatform . ".csv"
 	FileDelete, %headerPath%
 	FileAppend, % headerString, %headerPath%
