@@ -44,6 +44,7 @@ game.gameStarted
 game.gameInstances.ClickLevel
 game.gameInstances.ResetsSinceLastManual
 game.gameInstances.Controller.area.Active
+game.gameInstances.Controller.area.activeMonsters
 game.gameInstances.ResetHandler.resetting
 
 game.gameInstances.Controller.userData.inited
