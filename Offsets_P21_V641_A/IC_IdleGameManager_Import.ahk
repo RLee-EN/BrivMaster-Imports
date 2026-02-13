@@ -81,6 +81,8 @@ this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDe
 this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDefs.ID:=New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDefs,"Int",[16])
 this.game.gameInstances.Controller.area:=New GameObjectStructure(this.game.gameInstances.Controller,"Int",[24])
 this.game.gameInstances.Controller.area.Active:=New GameObjectStructure(this.game.gameInstances.Controller.area,"Char",[484])
+this.game.gameInstances.Controller.area.activeMonsters:=New GameObjectStructure(this.game.gameInstances.Controller.area,"List",[72])
+this.game.gameInstances.Controller.area.activeMonsters._CollectionValType:="CrusadersGame.GameScreen.Monster"
 this.game.gameInstances.Controller.areaTransitioner:=New GameObjectStructure(this.game.gameInstances.Controller,"Int",[64])
 this.game.gameInstances.Controller.areaTransitioner.IsTransitioning_k__BackingField:=New GameObjectStructure(this.game.gameInstances.Controller.areaTransitioner,"Char",[56])
 this.game.gameInstances.Controller.areaTransitioner.transitionDirection:=New GameObjectStructure(this.game.gameInstances.Controller.areaTransitioner,"Int",[60])
@@ -122,7 +124,7 @@ this.game.gameInstances.ActiveCampaignData.currentArea.Health:=New GameObjectStr
 this.game.gameInstances.ActiveCampaignData.currentAreaID:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData,"Int",[136])
 this.game.gameInstances.ActiveCampaignData.highestAvailableAreaID:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData,"Int",[144])
 this.game.gameInstances.ActiveCampaignData.currentRules:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData,"Int",[32])
-this.game.gameInstances.ActiveCampaignData.currentRules.MonsterDamageModifier:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData.currentRules,"Double",[944])
+this.game.gameInstances.ActiveCampaignData.currentRules.MonsterDamageModifier:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData.currentRules,"Double",[952])
 this.game.gameInstances.ActiveCampaignData.currentRules.monsterbaseStats:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData.currentRules,"Int",[224])
 this.game.gameInstances.ActiveCampaignData.currentRules.monsterbaseStats.BaseDPS:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData.currentRules.monsterbaseStats,"Double",[88])
 this.game.gameInstances.ActiveCampaignData.currentRules.monsterbaseStats.DPSGrowthRateCurve:=New GameObjectStructure(this.game.gameInstances.ActiveCampaignData.currentRules.monsterbaseStats,"Dict",[24])

@@ -1,5 +1,5 @@
 this.game:=New GameObjectStructure(this.IdleGameManager,"Int",[224])
-this.game.gameInstances:=New GameObjectStructure(this.game,"List",[168])
+this.game.gameInstances:=New GameObjectStructure(this.game,"List",[176])
 this.game.gameInstances._CollectionValType:="CrusadersGame.ChampionsGameInstance"
 this.game.gameInstances.Controller:=New GameObjectStructure(this.game.gameInstances,"Int",[24])
 this.game.gameInstances.Controller.userData:=New GameObjectStructure(this.game.gameInstances.Controller,"Int",[216])
@@ -81,6 +81,8 @@ this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDe
 this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDefs.ID:=New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetCurrencyHandler.ResetCurrencyDefs,"Int",[16])
 this.game.gameInstances.Controller.area:=New GameObjectStructure(this.game.gameInstances.Controller,"Int",[24])
 this.game.gameInstances.Controller.area.Active:=New GameObjectStructure(this.game.gameInstances.Controller.area,"Char",[484])
+this.game.gameInstances.Controller.area.activeMonsters:=New GameObjectStructure(this.game.gameInstances.Controller.area,"List",[72])
+this.game.gameInstances.Controller.area.activeMonsters._CollectionValType:="CrusadersGame.GameScreen.Monster"
 this.game.gameInstances.Controller.areaTransitioner:=New GameObjectStructure(this.game.gameInstances.Controller,"Int",[64])
 this.game.gameInstances.Controller.areaTransitioner.IsTransitioning_k__BackingField:=New GameObjectStructure(this.game.gameInstances.Controller.areaTransitioner,"Char",[56])
 this.game.gameInstances.Controller.areaTransitioner.transitionDirection:=New GameObjectStructure(this.game.gameInstances.Controller.areaTransitioner,"Int",[60])
@@ -209,8 +211,8 @@ this.game.gameInstances.StatHandler.ServerStats._CollectionValType:="Engine.Nume
 this.game.gameInstances.areaTransitionTimeScaleMultiplier:=New GameObjectStructure(this.game.gameInstances,"Float",[364])
 this.game.gameInstances.InstanceUserData_k__BackingField:=New GameObjectStructure(this.game.gameInstances,"Int",[192])
 this.game.gameInstances.InstanceUserData_k__BackingField.InstanceId:=New GameObjectStructure(this.game.gameInstances.InstanceUserData_k__BackingField,"Int",[320])
-this.game.gameStarted:=New GameObjectStructure(this.game,"Char",[248])
-this.game.gameUser:=New GameObjectStructure(this.game,"Int",[160])
+this.game.gameStarted:=New GameObjectStructure(this.game,"Char",[256])
+this.game.gameUser:=New GameObjectStructure(this.game,"Int",[168])
 this.game.gameUser.Loaded:=New GameObjectStructure(this.game.gameUser,"Char",[92])
 this.game.loadingScreen:=New GameObjectStructure(this.game,"Int",[88])
 this.game.loadingScreen.splashScreen:=New GameObjectStructure(this.game.loadingScreen,"Int",[968])
