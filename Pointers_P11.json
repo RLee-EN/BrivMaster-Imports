@@ -1,8 +1,8 @@
 {
 	"EngineSettings":{
-		"moduleAddress":7643320,
+		"moduleAddress":7816472,
 		"moduleOffset":[
-			48
+			672
 		],
 		"staticOffset":3840
 	},
@@ -25,5 +25,5 @@
 	},
 	"Pointer_Version_Major":641,
 	"Pointer_Version_Minor":".1",
-	"Pointer_Revision":"A"
+	"Pointer_Revision":"B"
 }
