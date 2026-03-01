@@ -303,11 +303,11 @@ class OutputToken
 	{
 		if(this.BaseItem)
 		{
-			importText.=currentString . "." . this.SanitisedName . ":=New GameObjectStructure(this." . this.BaseItem.Name . ",""" . this.Type.GetOutputType() . """," . 	this.Field.GetOffSetString() . ")`n"
+			importText.=currentString . "." . this.SanitisedName . ":=New IBM_GOS(this." . this.BaseItem.Name . ",""" . this.Type.GetOutputType() . """," . 	this.Field.GetOffSetString() . ")`n"
 		}
 		else
 		{
-			importText.=currentString . "." . this.SanitisedName . ":=New GameObjectStructure(" . currentString . ",""" . this.Type.GetOutputType() . """," . this.Field.GetOffSetString() . ")`n"
+			importText.=currentString . "." . this.SanitisedName . ":=New IBM_GOS(" . currentString . ",""" . this.Type.GetOutputType() . """," . this.Field.GetOffSetString() . ")`n"
 
 		}
 		if(this.Type.CollectionHasKey)
