@@ -174,3 +174,6 @@ game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHa
 game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName.parentEffectKeyHandler.activeEffectHandlers.cardsInHand.CardType
 #!! CrusadersGame.Effects.EllywickCallOfTheFeywildHandler
 game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName.parentEffectKeyHandler.activeEffectHandlers.IsUltimateActive
+#!! CrusadersGame.Effects.TatyanaFindAFeastHandler
+game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName.parentEffectKeyHandler.activeEffectHandlers.awaitReturnTimer
+game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName.parentEffectKeyHandler.activeEffectHandlers.awaitReturnTimer.t
