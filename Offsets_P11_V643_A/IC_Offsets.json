@@ -1,10 +1,12 @@
 {
 	"EngineSettings": {
-		"moduleAddress": 10560904,
+		"moduleAddress": 7815936,
 		"moduleOffset": [
-			1760,
-			880,
-			40
+			640,
+			80,
+			400,
+			96,
+			108
 		],
 		"staticOffset": 96
 	},
@@ -29,7 +31,7 @@
 	"Import_Version_Major": 643,
 	"Import_Version_Minor": "",
 	"Platform": "11",
-	"Pointer_Revision": "A",
+	"Pointer_Revision": "B",
 	"Pointer_Version_Major": 643,
 	"Pointer_Version_Minor": ""
 }
