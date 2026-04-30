@@ -11,27 +11,42 @@ Loop, Files, %A_LineFile%\..\ScriptHubExport*.json
 	DDLString:=DDLString ? DDLString . "|" . A_LoopFileName : A_LoopFileName
 }
 
-Gui, Add, Text, xm+5 w55, CE Export:
-Gui, Add, DropDownList, x+5 w200 vIBM_Import_FileSelect, %DDLString%
-Gui, Add, Text, x+10 w40, Revision:
-Gui, Add, Edit, x+5 w20 Limit1 vIBM_Import_Revision, A
-Gui, Add, Button, xm+140 w100 h30 gIBM_Import_Generate, Generate
-Gui, Add, Text, xm+3 w380 r2, A pointer data file must exist with a name in the format Pointers_P11.json, where 11 is the game platform ID for the relevant platform (11 being Steam)
-Gui, Add, Text, xm+3 w380 r2, The revision should only be changed from A if different imports need to be generated for the same game version, usually due to the addition of a new field
+global g_usingArgs:=A_Args[1]!=""&&A_Args[2]!=""
+if (!g_usingArgs)
+{
+	Gui, Add, Text, xm+5 w55, CE Export:
+	Gui, Add, DropDownList, x+5 w200 vIBM_Import_FileSelect, %DDLString%
+	Gui, Add, Text, x+10 w40, Revision:
+	Gui, Add, Edit, x+5 w20 Limit1 vIBM_Import_Revision, A
+	Gui, Add, Button, xm+140 w100 h30 gIBM_Import_Generate, Generate
+	Gui, Add, Text, xm+3 w380 r2, A pointer data file must exist with a name in the format Pointers_P11.json, where 11 is the game platform ID for the relevant platform (11 being Steam)
+	Gui, Add, Text, xm+3 w380 r2, The revision should only be changed from A if different imports need to be generated for the same game version, usually due to the addition of a new field
 
-Gui, Show,,,Briv Master Import Generator
-return
+	Gui, Show,,,Briv Master Import Generator
+	return
+}
+else
+{
+	IBM_Import_Generate()
+	ExitApp
+}
 
 GuiClose:
 ExitApp
 
 IBM_Import_Generate()
 {
-	GuiControlGet, fileName,, IBM_Import_FileSelect
+	if (g_usingArgs)
+		fileName:=A_Args[1]
+	else
+		GuiControlGet, fileName,, IBM_Import_FileSelect
 	if(!g_SourceFiles.HasKey(fileName))
 		return
 	filePath:=g_SourceFiles[fileName]
-	GuiControlGet, revision,, IBM_Import_Revision
+	if (g_usingArgs)
+		revision:=A_Args[2]
+	else
+		GuiControlGet, revision,, IBM_Import_Revision
 	if(StrLen(revision)==0)
 		return
 	StartTime:=A_TickCount
@@ -121,9 +136,11 @@ IBM_Import_Generate()
 	headerPath:=A_LineFile . "\..\IC_Offsets_Header_P" . gamePlatform . ".csv"
 	FileDelete, %headerPath%
 	FileAppend, % headerString, %headerPath%
-
-	OutputDebug % "Complete, JSON load time=[" . JSONReadTime-StartTime . "] object read time=[" . LoadedTime-JSONReadTime . "] game object file process time=[" . GameObjectFileTime-LoadedTime . "]`n"
-	MSGBOX % "Complete, JSON load time=[" . JSONReadTime-StartTime . "] object read time=[" . LoadedTime-JSONReadTime . "] game object file process time=[" . GameObjectFileTime-LoadedTime . "]`n"
+	outputMsg:="Complete, JSON load time=[" . JSONReadTime-StartTime . "] object read time=[" . LoadedTime-JSONReadTime . "] game object file process time=[" . GameObjectFileTime-LoadedTime . "]`n"
+	if (!g_usingArgs)
+		MSGBOX % outputMsg
+	else
+		FileAppend,%outputMsg%,*
 }
 
 GenerateImportText(outputTree)
