@@ -54,7 +54,7 @@ this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.TogglePref
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.TogglePreferences._CollectionKeyType:="System.Enum"
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.TogglePreferences._CollectionValType:="System.Boolean"
 this.game.gameInstances.Controller.userData.FeatHandler:=New IBM_GOS(this.game.gameInstances.Controller.userData,"Int",[184])
-this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots:=New IBM_GOS(this.game.gameInstances.Controller.userData.FeatHandler,"Dict",[56])
+this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots:=New IBM_GOS(this.game.gameInstances.Controller.userData.FeatHandler,"Dict",[64])
 this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots._CollectionKeyType:="System.Int32"
 this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots._CollectionValType:="System.Collections.Generic.List<CrusadersGame.Defs.HeroFeatDef>"
 this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots.List:=New IBM_GOS(this.game.gameInstances.Controller.userData.FeatHandler.heroFeatSlots,"List",[])
@@ -68,10 +68,10 @@ this.game.gameInstances.Controller.userData.SaveHandler.currentSave.Instances._C
 this.game.gameInstances.Controller.userData.SaveHandler.currentSave.Instances._CollectionValType:="CrusadersGame.User.UserSaveHandler.InstanceDetails"
 this.game.gameInstances.Controller.userData.SaveHandler.lastUserDataSaveTime:=New IBM_GOS(this.game.gameInstances.Controller.userData.SaveHandler,"Int64",[152])
 this.game.gameInstances.Controller.userData.StatHandler:=New IBM_GOS(this.game.gameInstances.Controller.userData,"Int",[48])
-this.game.gameInstances.Controller.userData.StatHandler.BrivSteelbonesStacks:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[864])
-this.game.gameInstances.Controller.userData.StatHandler.BrivSprintStacks:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[868])
-this.game.gameInstances.Controller.userData.StatHandler.Resets:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[192])
-this.game.gameInstances.Controller.userData.StatHandler.ServerStats:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Dict",[136])
+this.game.gameInstances.Controller.userData.StatHandler.BrivSteelbonesStacks:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[872])
+this.game.gameInstances.Controller.userData.StatHandler.BrivSprintStacks:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[876])
+this.game.gameInstances.Controller.userData.StatHandler.Resets:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Int",[200])
+this.game.gameInstances.Controller.userData.StatHandler.ServerStats:=New IBM_GOS(this.game.gameInstances.Controller.userData.StatHandler,"Dict",[144])
 this.game.gameInstances.Controller.userData.StatHandler.ServerStats._CollectionKeyType:="System.String"
 this.game.gameInstances.Controller.userData.StatHandler.ServerStats._CollectionValType:="Engine.Numeric.Quad"
 this.game.gameInstances.Controller.userData.inited:=New IBM_GOS(this.game.gameInstances.Controller.userData,"Char",[736])
@@ -187,7 +187,7 @@ this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes._Col
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.hero:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes,"Int",[992])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.hero.def:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.hero,"Int",[24])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.hero.def.ID:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.hero.def,"Int",[16])
-this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.lastGold:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes,"Quad",[1128])
+this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.lastGold:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes,"Quad",[1136])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel,"Int",[952])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox.maxLevelUpAllowed:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox,"Int",[988])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox.levelUpAmount:=New IBM_GOS(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.clickDamageBox,"Int",[984])
