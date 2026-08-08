@@ -8,14 +8,10 @@
 		"staticOffset":4192
 	},
 	"GameSettings":{
-		"moduleAddress":10564936,
+		"moduleAddress":7643472,
 		"moduleOffset":[
-			352,
-			2152,
-			160,
-			432
 		],
-		"staticOffset":592
+		"staticOffset":4096
 	},
 	"IdleGameManager":{
 		"moduleAddress":7655936,
@@ -24,7 +20,7 @@
 		],
 		"staticOffset":""
 	},
-	"Pointer_Version_Major":639,
-	"Pointer_Version_Minor":".1",
-	"Pointer_Revision":"B"
+	"Pointer_Version_Major":650,
+	"Pointer_Version_Minor":"",
+	"Pointer_Revision":"A"
 }
