@@ -2,16 +2,21 @@
 	"EngineSettings":{
 		"moduleAddress":7655936,
 		"moduleOffset":[
-			3856,
-			120
+			13896,
+			0,
+			112
 		],
-		"staticOffset":4192
+		"staticOffset":384
 	},
 	"GameSettings":{
-		"moduleAddress":7643472,
+		"moduleAddress":10564936,
 		"moduleOffset":[
+			352,
+			2152,
+			160,
+			432
 		],
-		"staticOffset":4096
+		"staticOffset":592
 	},
 	"IdleGameManager":{
 		"moduleAddress":7655936,
@@ -20,7 +25,7 @@
 		],
 		"staticOffset":""
 	},
-	"Pointer_Version_Major":650,
+	"Pointer_Version_Major":651,
 	"Pointer_Version_Minor":"",
 	"Pointer_Revision":"A"
 }

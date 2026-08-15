@@ -1,14 +1,10 @@
 {
 	"EngineSettings": {
-		"moduleAddress": 7815936,
+		"moduleAddress": 7815968,
 		"moduleOffset": [
-			640,
-			80,
-			400,
-			96,
-			108
+			528
 		],
-		"staticOffset": 96
+		"staticOffset": 16128
 	},
 	"GameSettings":{
 		"moduleAddress":10564936,
@@ -27,7 +23,7 @@
 		],
 		"staticOffset":""
 	},
-	"Pointer_Version_Major":643,
+	"Pointer_Version_Major":651,
 	"Pointer_Version_Minor":"",
-	"Pointer_Revision":"B"
+	"Pointer_Revision":"A"
 }
